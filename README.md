@@ -280,14 +280,20 @@ Click the chart icon on any session tab to see a complete timeline of what happe
 ### macOS & Linux
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Ark0N/claudeman/master/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/eYdr1en/Claudeman/master/install.sh | bash
 ```
 
-### npm (alternative)
+### Manual Installation
 
 ```bash
-npm install -g claudeman
+git clone https://github.com/eYdr1en/Claudeman.git
+cd Claudeman
+npm install
+npm run build
+npm link  # Optional: makes 'claudeman' available globally
 ```
+
+> **Note:** This fork includes fixes for Node.js 22 compatibility, xterm.js rendering issues, and Claude CLI v2.1.22+ support.
 
 ### Requirements
 
